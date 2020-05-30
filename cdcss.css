@@ -1,0 +1,264 @@
+ /* Grid overrides */
+.responsiveRow{
+	font-size: inherit;
+	line-height: 0px;
+}
+.responsiveCellSize1,.responsiveCellSize3,.clickdform .maxSize1,.clickdform .maxSize2,.clickdform .maxSize3,.clickdform .minSize1,.clickdform .minSize2,.clickdform .minSize3 {
+	max-width: 100%;
+}
+.clickdform .responsiveCell div.alignTop {
+	display: block;
+}
+/*.responsiveCellSize2{
+	max-width: 100%;
+	line-height: normal;
+}
+*/
+.responsiveCell{
+	width: 100%;
+	/*margin-bottom: 32px;
+	*/
+}
+span.maxSize1 {
+	font-family: gt_america,sans-serif;
+	font-size: 13px!important;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.41;
+	letter-spacing: normal;
+	color: #205284;
+	display: block;
+	/*margin-bottom: 15px;
+	*/
+	padding-left: 6px;
+}
+span.maxSize2 {
+	padding-left: 6px;
+	font-size: 13px!important;
+}
+input.maxSize1.width100per {
+	font-family: gt_america,sans-serif;
+	border-radius: 14px;
+	backdrop-filter: blur(40px);
+	border: solid 1px #c6d0eb;
+	width: 100%;
+	height: 56px;
+	transition: .3s;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+/* Base styles */
+.clickdform {
+	color: #223289;
+	font-size: 16px;
+	line-height: 10px;
+	font-family: Arial;
+}
+/* Form head */
+.clickdform .h1 {
+	font-size: 50px;
+	line-height: 20px;
+	color: #223289;
+	display: block;
+}
+.clickdform .h1 b {
+	font-weight: normal;
+	font-family: Arial !important;
+}
+/* Form fields */
+.clickdform .label {
+	font-size: 16px;
+	line-height: 1;
+	font-weight: bold;
+	color: #223289;
+}
+.clickdform .requiredStar {
+	font-family: gt_america,sans-serif;
+	font-weight: bold;
+	color: #22df89;
+	font-size: 17px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.41;
+	letter-spacing: normal;
+}
+textarea{
+	font-family: gt_america,sans-serif;
+	/* padding-top: 40px;
+	*/
+	overflow: auto;
+	resize: vertical;
+	border: 1px solid #e5e5e5;
+	/*height: 181px;
+	*/
+	width: 100%;
+	border-radius: 28px;
+	transition: .3s;
+}
+.clickdform input[type='text'],.clickdform textarea,.clickdform select {
+	transition: background 0.5s ease;
+	font-family: Arial;
+	font-size: 12px;
+	color: #223289;
+	background: #FFF;
+	border: 1px solid #223289;
+	border-radius: 4px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	width: 222px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.clickdform input[type='text']:focus,.clickdform textarea:focus,.clickdform select:focus {
+	outline: none;
+	background: #f2f2f2;
+}
+/* Form option field */
+.clickdform .option-field {
+	margin-bottom: 32px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #223289;
+	display: block;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.clickdform .option-field input {
+	vertical-align: middle;
+	margin-right: 5px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 10;
+	opacity: 0;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin-top: -1px;
+}
+.clickdform .option-field > span {
+	vertical-align: middle;
+	position: relative;
+	padding-left: 25px;
+}
+.clickdform .option-field > span:before {
+	content: '';
+	border: 1px solid #223289;
+	vertical-align: middle;
+	height: 15px;
+	width: 15px;
+	border-radius: 4px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.clickdform .option-field > span:after {
+	transition: opacity 0.5s ease;
+	content: 'x';
+	font-size: 16px;
+	line-height: 1;
+	color: #223289;
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	transform: translateY(-50%);
+	margin-top: -1px;
+	opacity: 0;
+}
+.clickdform .option-field input:checked ~ span:after {
+	opacity: 1;
+}
+/* Policies */
+.clickdform .policies {
+	font-family: Arial;
+	font-weight: normal;
+	color: #223289;
+	font-size: 16px;
+	line-height: 12px;
+}
+.clickdform .policies a {
+	transition: all 0.5s ease;
+	color: #223289;
+}
+.clickdform .policies a:hover {
+	color: #223289;
+}
+/* Submit */
+.clickdform input[type='button'] {
+	font-family: Arial;
+	font-weight: normal;
+	color: #223289;
+	background: #22df89;
+	border: none;
+	font-size: 16px;
+	line-height: 1;
+	height: 30px;
+	border-radius: 15px;
+	display: inline-flex;
+	vertical-align: center;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.clickdform input[type='button']:hover {
+	transition: all 0.5s ease;
+	background: #223289;
+	color: white;
+}
+/* Form errors */
+.clickdform .error .label {
+	color: #e46150;
+}
+.clickdform .error input[type='text'],.clickdform .error textarea,.clickdform .error select {
+	background: #f2f2f2;
+	border-color: #e46150;
+}
+.clickdform .requiredInfo {
+	color: #e46150;
+	font-family: Arial;
+	font-size: 16px !important;
+	line-height: 12px;
+	height: auto;
+	float:right;
+}
+.clickdform .requiredInfo > div {
+	margin: -8px 0 20px;
+}
+.custom-font {
+	font-family: Arial !important;
+}
+.clickdform.mainDiv {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 95%;
+	width: 100%;
+	padding-left: 0px !important;
+}
+.QapTcha {
+	line-height: 10px;
+}
+.politicaseguranca {
+	font-family: Arial;
+	text-decoration: underline;
+	font-weight: bold;
+	color: #223289;
+	font-size: 11px;
+	display: inline-block;
+	vertical-align: center;
+	margin-left: 2px;
+}
+.politicaseguranca:hover {
+	transition: all 0.5s ease;
+	color: #22df89;
+}
